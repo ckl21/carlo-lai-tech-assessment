@@ -1,0 +1,49 @@
+.list-container {
+  background-color: white;
+  padding: 25px;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 640px;
+  width: 90%;
+  margin: 50px;
+}
+
+.element-list {
+  display: flex;
+  gap: 20px;
+}
+
+.element-list_children {
+  flex-grow: 1;
+  border: 1px solid rgb(228, 228, 228);
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  max-width: 84%;
+  flex-wrap: wrap;
+}
+
+.element-list_children * {
+  flex-shrink: 0;
+}
+
+.element-list_btn-container {
+  margin-top: 11px;
+}
+
+.upvoteBtn.selected {
+  background-color: #E5E8FD;
+}
+
+.upvoteBtn.selected:hover {
+  background-color: #dfe2f5;
+}
+
+.upvoteBtn.selected path {
+  fill: #253CF2;
+}
